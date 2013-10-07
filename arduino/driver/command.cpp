@@ -4,32 +4,27 @@
 void cmd(char cmd){
     /* On analyse le message en fonction de son type */
     switch(cmd){
-	case AVANCER:
+	case SCRIPT_1:
+		//Avance 1s
 		set_pwm_left(255);
 		set_pwm_right(255);
-		break;
-	
-	case RECULER:
-		set_pwm_left(-255);
-		set_pwm_right(-255);
-		break;
+		delay(1000);
 
-	case TOURNER_DROITE:
+		//tourne vers la droite une demi seconde
 		set_pwm_left(255);
 		set_pwm_right(-255);
-		break;
+		delay(500);
 
-	case TOURNER_GAUCHE:
-		set_pwm_left(-255);
-		set_pwm_right(255);
-		break;
+		//recule lentement 2 secondes	
+		set_pwm_left(-100);
+		set_pwm_right(-100);
+		delay(2000);
 
-	case STOP:
 		set_pwm_left(0);
 		set_pwm_right(0);
 		break;
 
-	case BLABLABLA:
+	case SCRIPT_2:
 		break;
     }
 }
