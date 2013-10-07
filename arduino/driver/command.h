@@ -2,7 +2,6 @@
 #define COMMAND_H_
 
 #define SERIAL_BAUD 115200
-#define PIN_TODO 1
 
 #define AVANCER 0x01
 #define RECULER 0x02

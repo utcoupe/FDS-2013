@@ -8,9 +8,10 @@ void setup(){
   	Serial.begin(SERIAL_BAUD);
 
 //TODO : pins
+	/*
 	pinMode(PIN_TODO, OUTPUT); 
 	digitalWrite(PIN_TODO, LOW);
-
+	*/
 	// LED qui n'en est pas une
 	pinMode(16,OUTPUT);
 }
