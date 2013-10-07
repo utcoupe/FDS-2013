@@ -7,11 +7,7 @@ void setup(){
 	/*Active la liaison serie*/
   	Serial.begin(SERIAL_BAUD);
 
-//TODO : pins
-	/*
-	pinMode(PIN_TODO, OUTPUT); 
-	digitalWrite(PIN_TODO, LOW);
-	*/
+	cherche_moteurs();
 	// LED qui n'en est pas une
 	pinMode(16,OUTPUT);
 }
@@ -19,7 +15,6 @@ void setup(){
 void loop(){
 	/* La del est allumee pendant le traitement */
 	digitalWrite(16, HIGH);
-	int max_read = 20;
 
 	/* zone programmation libre */
 	
