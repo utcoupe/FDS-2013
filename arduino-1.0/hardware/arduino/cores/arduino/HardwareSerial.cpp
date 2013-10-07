@@ -147,6 +147,22 @@ inline void store_char(unsigned char c, ring_buffer *buffer)
 #endif
 #endif
 
+#if defined(USART1_RX_vect)
+  void serialEvent1() __attribute__((weak));
+  void serialEvent1() {}
+  #define serialEvent1_implemented
+  SIGNAL(USART1_RX_vect)
+  {
+    if (bit_is_clear(UCSR1A, UPE1)) {
+      unsigned char c = UDR1;
+      store_char(c, &rx_buffer1);
+    } else {
+      unsigned char c = UDR1;
+    };
+  }
+#elif defined(SIG_USART1_RECV)
+  #error SIG_USART1_RECV
+#endif
 
 #if defined(USART2_RX_vect) && defined(UDR2)
   void serialEvent2() __attribute__((weak));
@@ -502,3 +518,4 @@ HardwareSerial::operator bool() {
 #endif
 
 #endif // whole file
+
