@@ -1,6 +1,9 @@
 #ifndef COMMAND_H_
 #define COMMAND_H_
 
+#include "ax12.h"
+#include "AFMotor.h"
+
 #define SERIAL_BAUD 115200
 
 #define AVANCER 0x01
