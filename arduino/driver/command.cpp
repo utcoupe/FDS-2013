@@ -25,6 +25,13 @@ void cmd(char cmd){
 		break;
 
 	case SCRIPT_2:
+		tourner(0,0,150,100);
+		delay(1000);
+		tourner(0,1,-150,100);
+		delay(1000);
+		tourner(0,0,30,100);
+		delay(1000);
+		tourner(0,1,80,100);
 		break;
     }
 }

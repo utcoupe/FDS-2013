@@ -3,6 +3,7 @@
 
 #include "ax12.h"
 #include "motor.h"
+#include "controle_ax12.h"
 
 #define SERIAL_BAUD 115200
 
