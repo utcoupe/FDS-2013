@@ -7,6 +7,7 @@
 
 #include <inttypes.h>
 #include <avr/io.h>
+#include "Arduino.h"
 
 
 #define MOTOR12_64KHZ _BV(CS20)  // no prescale

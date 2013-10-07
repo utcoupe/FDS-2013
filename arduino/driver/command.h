@@ -2,7 +2,7 @@
 #define COMMAND_H_
 
 #include "ax12.h"
-#include "AFMotor.h"
+#include "motor.h"
 
 #define SERIAL_BAUD 115200
 

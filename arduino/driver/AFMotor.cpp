@@ -6,9 +6,6 @@
 
 
 #include <avr/io.h>
-#include "include_arduino.h"
-
-
 #include "AFMotor.h"
 
 
