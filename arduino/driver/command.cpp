@@ -6,18 +6,18 @@ void cmd(char cmd){
     switch(cmd){
 	case SCRIPT_1:
 		//Avance 1s
-		set_pwm_left(255);
-		set_pwm_right(255);
+		set_pwm_left(100);
+		set_pwm_right(100);
 		delay(1000);
 
 		//tourne vers la droite une demi seconde
-		set_pwm_left(255);
-		set_pwm_right(-255);
+		set_pwm_left(100);
+		set_pwm_right(-100);
 		delay(500);
 
 		//recule lentement 2 secondes	
-		set_pwm_left(-100);
-		set_pwm_right(-100);
+		set_pwm_left(-70);
+		set_pwm_right(-70);
 		delay(2000);
 
 		set_pwm_left(0);

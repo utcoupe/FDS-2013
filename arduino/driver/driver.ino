@@ -26,6 +26,9 @@ void loop(){
 		// recuperer l'octet courant
 		char data = Serial.read();
 		cmd(data);
+		Serial.write("Lu :");
+		Serial.write(data);
+		Serial.write("\n");
 	}
 
 	/* On eteint la del */
