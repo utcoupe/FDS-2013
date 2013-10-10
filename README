@@ -1,0 +1,14 @@
+Pour utiliser le robot a la FDS :
+se connecter en ssh au robot en wifi. (ID : fred ; password : utcoupe) : "ssh fred@ip"
+se connecter en serial a l'arduino : "sudo screen /dev/ttyACM0 115200"
+
+l'appui d'une touche lance un script :
+'1' = script de d√plement
+'5' = script de d√placement (qui tient sur la table)
+
+on peut t√l√©commaner le robot
+z = avance
+q = gauche
+s = recule
+d = droite
+/!\ attention : chaque appui effectue l'action pendant 500ms (ne pas maintenir)
