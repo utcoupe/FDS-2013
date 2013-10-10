@@ -30,7 +30,15 @@ void cmd(char cmd){
 		set_pwm_right(0);
 		break;
 
-	case SCRIPT_2:
+	case SCRIPT_D:
+		set_pwm_left(-80);
+		set_pwm_right(-80);
+		delay(500);
+
+		set_pwm_left(0);
+		set_pwm_right(0);
+		break;
+	case SCRIPT_Q:
 		set_pwm_left(70);
 		set_pwm_right(70);
 		delay(500);
@@ -38,15 +46,15 @@ void cmd(char cmd){
 		set_pwm_left(0);
 		set_pwm_right(0);
 		break;
-	case SCRIPT_3:
-		set_pwm_left(-70);
+	case SCRIPT_S:
+		set_pwm_left(70);
 		set_pwm_right(-70);
 		delay(500);
 
 		set_pwm_left(0);
 		set_pwm_right(0);
 		break;
-	case SCRIPT_4:
+	case SCRIPT_Z:
 		set_pwm_left(-70);
 		set_pwm_right(70);
 		delay(500);
